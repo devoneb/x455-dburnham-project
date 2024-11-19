@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- changed -->
+    <title>Breadful Bakery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/w3.css" />
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+ /* customize <a> tag styles */
+    a {
+        text-decoration: none;
+        color: #00a2ff;
+        cursor: pointer;
+      }
+
+      /* my css */
+      .my-img-size-1 {
+        max-width: 300px;
+      }
+
+      .my-img-size-2 {
+        max-width: 500px;
+      }
+
+      .my-float-left {
+        float: left;
+        padding-right: 20px;
+      }
+
+      .my-float-right {
+        float: right;
+        padding-left: 20px;
+      }
+
+        /* for scrollable area */
+        .my-scrolling {
+        height: 300px;
+        overflow: auto;
+        }
+
+</style>
+</head>
+<body>
+ <!-- begin: step 2 of adding sortable table: add jquery links here -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: step 2 of adding sortable table: add jquery links here -->
+
+    <link rel="stylesheet" href="./css/w3.css" />
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+     <!-- added -->
+     <div>
+      <a class="w3-padding-large w3-hide-small w3-right"
+        ><i class="fa fa-shopping-basket w3-text-brown"></i
+      ></a>
+      <a class="w3-padding-large w3-hide-small w3-right"
+        ><i class="fa fa-search w3-text-brown"></i
+      ></a>
+    </div>
+    <a href="#home" class="w3-bar-item w3-button">Breadful Bakery</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="#ourfood" class="w3-bar-item w3-button">Our Food</a>
+      <a href="#offerings" class="w3-bar-item w3-button">Offerings</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#baking" class="w3-bar-item w3-button">Baking Bread</a>
+      <a href="#pictures" class="w3-bar-item w3-button">Pictures</a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="bread.png" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Breadful Bakery</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div id="ourfood" class="w3-padding-top-64">
+    <h1 class="w3-center">Our Food</h1>
+    <div class="w3-padding-large">
+      <h2 class="w3-center">Bread</h2>
+      <p>
+        <img
+          src="tiny bread.png"
+          class="w3-round w3-image my-float-left my-img-size-1"
+          alt="loaf of bread with a piece cut off"
+          style="width: 100%"
+        />
+        Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking. 
+        Throughout recorded history and around the world, it has been an important part of many cultures' diet. 
+        It is one of the oldest human-made foods, having been of significance since the dawn of agriculture, 
+        and plays an essential role in both religious rituals and secular culture. Bread may be leavened by naturally 
+        occurring microbes (e.g. sourdough), chemicals (e.g. baking soda), industrially produced yeast, 
+        or high-pressure aeration, which creates the gas bubbles that fluff up bread. In many countries, 
+        commercial bread often contains additives to improve flavor, texture, color, shelf life, nutrition, 
+        and ease of production.
+        </p>
+        <p>
+          Bread is also made from the flour of other wheat species (including spelt, emmer, einkorn and kamut). 
+          Non-wheat cereals including rye, barley, maize (corn), oats, sorghum, millet and rice have been used to make bread, 
+          but, with the exception of rye, usually in combination with wheat flour as they have less gluten.
+        </p>
+        <p>Gluten-free breads are made using flours from a variety of ingredients such as almonds, rice, sorghum, 
+          corn, legumes such as beans, and tubers such as cassava. Since these foods lack gluten, dough made from 
+          them may not hold its shape as the loaves rise, and their crumb may be dense with little aeration. Additives 
+          such as xanthan gum, guar gum, hydroxypropyl methylcellulose (HPMC), corn starch, or eggs are used to 
+          compensate for the lack of gluten.</p>
+      </p>
+      <p>
+       
+        <span
+          >Reference:
+          <a
+            href="https://en.wikipedia.org/wiki/Bread"
+            target="_blank"
+            class="w3-hover-opacity"
+            >https://en.wikipedia.org/wiki/Bread</a
+          ></span
+        >
+      </p>
+      <h2>Dough</h2>
+      <p>
+        <img
+          src="dough.png"
+          class="w3-round w3-image my-float-right my-img-size-2"
+          alt="various types of vegetables"
+          style="width: 25%"
+          />
+          For yeast-based and sponge (such as sourdough) breads, a common production technique is the dough is mixed, 
+          kneaded, and then left to rise. Many bread doughs call for a second stage, where the dough is kneaded again, 
+          shaped into the final form, and left to rise a final time (or proofed) before baking. 
+          Kneading is the process of working a dough to produce a smooth, elastic dough by developing gluten. 
+          This process is both temperature and time-dependent; temperatures that are either too hot or too cold will 
+          cause the yeast to not develop, and rising times that are either too short or too long will affect the final product.
+          </p>
+          <p>
+            Doughs for biscuits and many flatbreads which are not leavened with yeast are typically mixed but not kneaded 
+            or left to rise; these doughs are shaped and cooked directly after mixing. While breads and other products 
+            made from doughs are often baked, some types of dough-based foods are cooked over direct heat, such as tortillas, 
+            which are cooked directly on a griddle. Fried dough foods are also common in many cultures. Pancakes, waffles, 
+            some kinds of bar cookies such as brownies, and many cakes and quick breads (including muffins and the like) 
+            are often made with a semi-liquid batter of flour and liquid that is poured into the final shape, rather than 
+            a solid dough. Unlike bread dough, these batters are not stabilized by the formation of a gluten network
+          </p>
+          <p>
+       
+            <span
+              >Reference:
+              <a
+                href="https://en.wikipedia.org/wiki/Dough"
+                target="_blank"
+                class="w3-hover-opacity"
+                >https://en.wikipedia.org/wiki/Dough</a
+              ></span
+            >
+          </p>
+
+    </div>
+
+    <!-- Offerings -->
+      <div id="offerings" class="w3-padding-top-64">
+        <h1 class="w3-center">What We Offer</h1>
+        <div class="w3-content" style="max-width: 500px">
+          <img
+            class="mySlides"
+            src="b1.png"
+            style="width: 100%; display: none"
+          />
+          <img
+            class="mySlides"
+            src="b2.png"
+            style="width: 100%; display: none"
+          />
+          <img
+            class="mySlides"
+            src="b3.png"
+            style="width: 100%; display: none"
+          />
+          <img
+            class="mySlides"
+            src="b4.png"
+            style="width: 100%; display: none"
+          />
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s1">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="b1.png"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(1)"
+              />
+            </div>
+            <div class="w3-col s1">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="b2.png"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(2)"
+              />
+            </div>
+            <div class="w3-col s1">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="b3.png"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(3)"
+              />
+            </div>
+            <div class="w3-col s1">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="b4.png"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(4)"
+              />
+        </div>
+        </div>
+</div>
+
+  
+      <!-- Menu -->
+      <div id="menu" class="w3-container w3-padding-top-64">
+        <h1 class="w3-center">Menu</h1>
+        <div class="w3-responsive">
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr class="w3-brown">
+                <th>BREAD</th>
+                <th>NAME</th>
+                <th>SIZE</th>
+                <th>PRICE</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-sand">
+              <td><img src="tinyb1.png" style="width: 120px" /></td>
+              <td>White</td>
+              <td>Medium</td>
+              <td>$12.99</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>
+                <img src="tinyb2.png" style="width: 120px" />
+              </td>
+              <td>Roll</td>
+              <td>Small</td>
+              <td>$1.99/per</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td><img src="tinyb3.png" style="width: 120px" /></td>
+              <td>Baguette</td>
+              <td>Large</td>
+              <td>$16.99</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>
+                <img src="tinyb4.png" style="width: 120px" />
+              </td>
+              <td>Wheat</td>
+              <td>Medium</td>
+              <td>$12.99</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <hr />
+
+ <!-- Baking Bread -->
+ <div id="baking" class="w3-container w3-padding-top-64">
+    <h1 class="w3-center">Baking Bread</h1>
+    <div class="w3-row">
+      <div class="w3-col m4 w3-center">
+        <iframe
+          height="300"
+          src="https://www.youtube.com/embed/Jizr6LR83Kk"
+          title="Baking Bread"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+        >
+        </iframe>
+      </div>
+      <div class="w3-col m4 w3-center">
+        <iframe
+          height="300"
+          src="https://www.youtube.com/embed/9Pc6ddLUl48"
+          title="Baking Bread"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+        >
+        </iframe>
+      </div>
+      <div class="w3-col m4 w3-center">
+        <iframe
+          height="300"
+          src="https://www.youtube.com/embed/OI2-6Ps2Hcc"
+          title="Baking Bread"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+        >
+        </iframe>
+      </div>
+    </div>
+   
+
+    <div class="w3-row w3-padding-64" id="seasoning">
+        <h1 class="w3-center">The Process</h1>
+        <div class="w3-padding-large">
+          <!-- 3 columns of scrollable areas - using row and col for partitions -->
+          <div class="w3-row">
+            <div class="w3-col s4 w3-padding w3-sand">
+              <div
+                class="w3-brown w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Prepping the Dough</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Shaping bread dough is the step in the bread-making process 
+                  when you physically transform divided and preshaped dough into 
+                  its final form, with the intention that the form is retained to 
+                  some degree until the dough is baked. With the style of baking typically done, 
+                  shaping is the sixth step in the process, right after dividing and preshaping 
+                  and right before proofing. The result of shaping is smooth dough with a tight outer skin that’s 
+                  then placed into a proofing basket or bowl for the dough’s second (or final) rise.
+                  </p>
+                  <p></p>
+                  While not always necessary, we usually preshape my bread and pizza dough. At the end of bulk 
+                  fermentation (first rise), we have a large dough that’s risen for several hours and 
+                  is disorderly once tipped out to the work surface. If you’re making more than one loaf of bread, 
+                  this large dough needs to be split (divided) into smaller pieces. In doing so, you end up 
+                  with shaggy, unorganized bits of dough. To make final shaping easier, preshape those shaggy 
+                  bits into loose but organized pieces.
+                  </p>
+                  <p></p>
+                  These smaller pieces will be smoother, more cohesive, and ready to form into the final shape.
+                  </p>
+                </p>
+              </div>
+            </div>
+            <div class="w3-col s4 w3-padding w3-brown">
+              <div
+                class="w3-sand w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Different Dough Shapes</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  A staple shape for any baker, the boule is the simplest form of shaping and 
+                  a good option when working with doughs that are expected to have a tighter interior crumb 
+                  (like porridge bread, whole wheat, or those with high mix-in percentages).
+                  </p>
+                  <p>
+                    Thanks to our smaller oven size and limited proofing options, baguettes are a challenge 
+                    for the home bread baker. But they also require practice and consistent attention to fermentation, 
+                    dough strength, shaping, and proofing.
+                  </p>
+                  <p>
+                    You can use your hands to make small, tight rounds when shaping bread dough as a small 
+                    bun or roll. Alternatively, you can use a bench scraper if the dough is extra soft and tacky. 
+                    We tend to use my bench scraper more often than not because it’s easy to push and pull the 
+                    dough against the work surface with the blade, more easily encouraging 
+                    a tight skin to form on the exterior of the dough.
+                  </p>
+                </p>
+              </div>
+            </div>
+            <div class="w3-col s4 w3-padding w3-sand">
+              <div
+                class="w3-brown w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Baking the Bread</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  When you’re baking homemade bread (or other yeast recipes), though, 
+                  the amount of flour will almost always vary. Rather than using a specified 
+                  amount of flour and calling it a day, you need to judge based on the consistency of your dough. 
+                  You’re looking for the dough to cling together and form a ball. It should not stick to your hands 
+                  but should be slightly tacky to the touch. You may need less flour than I do, or you may need more.
+                  </p>
+                  <p>
+                    For a 650g loaf we bake at 220°c for 10 minutes, 200°c for ten more minutes and then reduce to 160°c until an oven 
+                    safe thermo probe reads 87°c in the interior. Remove from tin, place on a wire rack and cover with a 
+                    clean dry kitchen towel until cool. Don’t be tempted to cover with a wet cloth, put in a container or a bag, 
+                    the condensation will make your loaf wet.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr /> 
+
+  <div id="pictures" class="w3-container w3-padding-top-64">
+    <h1 class="w3-center">Pictures of the Bakery</h1>
+
+    <div class="w3-row-padding" style="margin: 15px 0px">
+      <div class="w3-col s4">
+        <img
+          src="bakery1.png"
+          style="width: 100%; cursor: zoom-in"
+          onclick="document.getElementById('modal01').style.display='block'"
+          class="w3-hover-shadow"
+        />
+      </div>
+      <div class="w3-col s4">
+        <img
+          src="bakery2.png"
+          style="width: 100%; cursor: zoom-in"
+          onclick="document.getElementById('modal02').style.display='block'"
+          class="w3-hover-shadow"
+        />
+      </div>
+      <div class="w3-col s4">
+        <img
+          src="bakery3.png"
+          style="width: 100%; cursor: zoom-in"
+          onclick="document.getElementById('modal03').style.display='block'"
+          class="w3-hover-shadow"
+        />
+      </div>
+    </div>
+
+    <div class="w3-row-padding" style="margin: 15px 0px">
+      <div class="w3-col s4">
+        <img
+          src="bakery4.png"
+          style="width: 100%; cursor: zoom-in"
+          onclick="document.getElementById('modal04').style.display='block'"
+          class="w3-hover-shadow"
+        />
+      </div>
+      <div class="w3-col s4">
+        <img
+          src="bakery5.png"
+          style="width: 100%; cursor: zoom-in"
+          onclick="document.getElementById('modal05').style.display='block'"
+          class="w3-hover-shadow"
+        />
+      </div>
+      <div class="w3-col s4">
+        <img
+          src="bakery6.png"
+          style="width: 100%; cursor: zoom-in"
+          onclick="document.getElementById('modal06').style.display='block'"
+          class="w3-hover-shadow"
+        />
+      </div>
+    </div>
+
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Bread Rack</h4>
+        <img src="bakery1.png" style="width: 100%" />
+      </div>
+    </div>
+
+    <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Freshly Baked Bread</h4>
+        <img src="bakery2.png" style="width: 100%" />
+      </div>
+    </div>
+
+    <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Window Display</h4>
+        <img src="bakery3.png" style="width: 100%" />
+      </div>
+    </div>
+
+    <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Counter</h4>
+        <img src="bakery4.png" style="width: 100%" />
+      </div>
+    </div>
+
+    <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">View of Entire Bakery</h4>
+        <img src="bakery5.png" style="width: 100%" />
+      </div>
+    </div>
+
+    <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Kitchen</h4>
+        <img src="bakery6.png" style="width: 100%" />
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-sand w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"
+        ></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a
+          class="fa fa-twitter w3-hover-opacity w3-text-brown"
+          href="https://twitter.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-instagram w3-hover-opacity w3-text-brown"
+          href="https://www.instagram.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-linkedin w3-hover-opacity w3-text-brown"
+          href="https://www.linkedin.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-pinterest-p w3-hover-opacity w3-text-brown"
+          href="https://www.pinterest.com/"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-facebook-official w3-hover-opacity w3-text-brown my-text-decoration"
+          href="https://www.facebook.com/"
+          target="_blank"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity w3-text-brown"
+          style="padding-right: 20px"
+          >Privacy Policy</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity w3-text-brown"
+          style="padding-right: 20px"
+          >Terms of User</a
+        >
+        <a href="#home" target="_blank" class="w3-hover-opacity w3-text-brown"
+          >Accessibility</a
+        >
+      </div>
+      <a
+        href="#"
+        target="_blank"
+        class="fa fa-copyright w3-hover-opacity w3-text-brown"
+        >All Rights Reserved.</a
+      >
+    </footer>
+<script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+    // slideshow - carousel
+    function currentDiv(n) {
+      showDivs((slideIndex = n));
+      myIndex = n;
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+
+    // accordion
+    function myAccordion(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace(
+            "w3-brown",
+            "w3-2021-raspberry-sorbet"
+          );
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace(
+            "w3-2021-raspberry-sorbet",
+            "w3-brown"
+          );
+      }
+    }
+
+    // begin added for sortable
+    $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+  </script>
+</body>
+</html>
